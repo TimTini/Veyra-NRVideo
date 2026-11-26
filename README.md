@@ -71,6 +71,16 @@ Turn local video, capture cards and game streaming into one real-time GPU enhanc
 
 This edition starts from [Likely7's v2.2.1](https://github.com/Likely7/Veyra-NRVideo/releases/tag/v2.2.1). The download above is the original release. To run the changes below, build this source. The two earlier local changes remove the in-app updater, restrict translation to loopback services, and keep the last connected capture format while a new selection is being edited.
 
+### Run a Windows development build
+
+Configure a Windows x64 Release build with MSVC and CMake/Ninja as described in the [build notes](docs/BUILD_2.2.1.md). In a PowerShell developer session with Qt and the required runtime DLLs available, run this from the repository root. Replace `build` with your configured build directory.
+
+```powershell
+& './scripts/run-from-source.ps1' -BuildDir './build'
+```
+
+CMake/Ninja builds the player incrementally and the script opens it with a development profile inside the build directory. Add `-Smoke` to use a separate profile and close automatically. This workflow runs the build output directly without creating an installer or portable ZIP.
+
 | Area | Change |
 | --- | --- |
 | Capture cadence | Automatic duplicate detection handles repeated source frames on 120 Hz and 119.88 Hz transport, including 24 fps material. [PR 309](https://github.com/Likely7/Veyra-NRVideo/pull/309) |

@@ -46,6 +46,11 @@ int main(int argc, char** argv) {
     // A capture format label with a technical tag at the end.
     expect(i18n::text(QStringLiteral("1920 x 1080 @ 120.00 fps · NV12 · 原生 · 低延迟 [format 16]")),
            QStringLiteral("1920 x 1080 @ 120.00 fps · NV12 · Native · low latency [format 16]"), "tagged segment");
+    expect(i18n::text(QStringLiteral("1920 x 1080 @ 60.000 fps · 逐行 · MJPEG · 需系统解码/转换 · 需系统解码·较高延迟 · 范围候选（连接时验证） [format 1]")),
+           QStringLiteral("1920 x 1080 @ 60.000 fps · Progressive · MJPEG · Needs system decoding/conversion · needs system decoding · higher latency · Range candidate (verified on connection) [format 1]"),
+           "capture label with range flag and driver index");
+    expect(QCoreApplication::translate("LiveTranslationDialog", "本机 API（OpenAI 兼容）"),
+           QStringLiteral("Local API (OpenAI-compatible)"), "local translation API label");
     // The presentation status (VideoPresenter) joins its pieces with " · "; each is its own entry.
     expect(i18n::text(QStringLiteral("英伟达低延迟：关 · 显示同步：自动 · 不撕裂，也不等待垂直同步（延迟最低）")),
            QStringLiteral("NVIDIA Low Latency: Off · Display sync: auto · no tearing and no VSync wait (lowest latency)"), "presentation status pieces");

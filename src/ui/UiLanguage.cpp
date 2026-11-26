@@ -146,7 +146,13 @@ QString translatePieces(const CatalogTranslator& t, const QString& s, int depth)
         for (auto& part : parts) {
             const QString trimmed = part.trimmed();
             if (!hasHan(trimmed)) continue;
-            const QString done = translatePieces(t, trimmed, depth + 1);
+            QString done = translatePieces(t, trimmed, depth + 1);
+            if (done == trimmed && sep == QStringLiteral(" · ")) {
+                // Some capture flags are stored with the delimiter in their catalog key.
+                const auto marked = t.exact.constFind(sep + trimmed);
+                if (marked != t.exact.constEnd() && marked->startsWith(sep))
+                    done = marked->mid(sep.size());
+            }
             part.replace(trimmed, done);
         }
         // Full-width separators read oddly between Latin sentences.

@@ -6163,6 +6163,19 @@
    "ru": "Veyra Закрыт неожиданно в последний раз %1)"
   },
   {
+   "zh": "上次成功连接的采集设置无法保存",
+   "src": "src/ui/QmlPlayerBridge.cpp",
+   "zh-TW": "無法儲存上次成功連線的擷取設定",
+   "en": "Could not save the last working capture settings",
+   "ja": "最後に接続できたキャプチャ設定を保存できませんでした",
+   "ko": "마지막으로 연결에 성공한 캡처 설정을 저장하지 못했습니다",
+   "es": "No se pudo guardar la última configuración de captura que funcionó",
+   "fr": "Impossible d’enregistrer les derniers réglages de capture fonctionnels",
+   "de": "Die zuletzt funktionierenden Aufnahmeeinstellungen konnten nicht gespeichert werden",
+   "pt-BR": "Não foi possível salvar as últimas configurações de captura que funcionaram",
+   "ru": "Не удалось сохранить последние рабочие настройки захвата"
+  },
+  {
    "zh": "上次的捕获目标「%1」已不在，请重新选择",
    "src": "src/ui/bridge/View.cpp",
    "zh-TW": "上次的擷取目標「%1」已不在，請重新選擇",
@@ -12181,6 +12194,32 @@
    "de": "Speichern unter",
    "pt-BR": "Salvar como",
    "ru": "Сохранить как"
+  },
+  {
+   "zh": "只允许本机回环翻译接口",
+   "src": "src/ui/LiveTranslation.cpp",
+   "zh-TW": "只允許使用本機回送翻譯 API",
+   "en": "Only a local loopback translation API is allowed",
+   "ja": "ローカルのループバック翻訳 API のみ使用できます",
+   "ko": "로컬 루프백 번역 API만 사용할 수 있습니다",
+   "es": "Solo se permite una API de traducción de bucle local",
+   "fr": "Seule une API de traduction sur la boucle locale est autorisée",
+   "de": "Nur eine Übersetzungs-API über Loopback ist zulässig",
+   "pt-BR": "Só é permitida uma API de tradução de loopback local",
+   "ru": "Разрешён только локальный API перевода через loopback"
+  },
+  {
+   "zh": "只允许连接到本机回环地址。",
+   "src": "qml/LiveTranslationDialog.qml",
+   "zh-TW": "只允許連線至本機回送位址。",
+   "en": "Only loopback addresses on this computer are allowed.",
+   "ja": "このコンピューターのループバックアドレスにのみ接続できます。",
+   "ko": "이 컴퓨터의 루프백 주소에만 연결할 수 있습니다.",
+   "es": "Solo se permiten conexiones a direcciones de bucle local de este equipo.",
+   "fr": "Seules les connexions aux adresses de boucle locale de cet ordinateur sont autorisées.",
+   "de": "Nur Verbindungen zu Loopback-Adressen dieses Computers sind zulässig.",
+   "pt-BR": "Só são permitidas conexões com endereços de loopback deste computador.",
+   "ru": "Разрешены подключения только к адресам loopback этого компьютера."
   },
   {
    "zh": "只列出当前分辨率和帧率下的像素格式",
@@ -25769,6 +25808,19 @@
    "ru": "Бэтч закончил: {} Удалось, {} Не удалось"
   },
   {
+   "zh": "本机 API（OpenAI 兼容）",
+   "src": "qml/LiveTranslationDialog.qml",
+   "zh-TW": "本機 API（OpenAI 相容）",
+   "en": "Local API (OpenAI-compatible)",
+   "ja": "ローカル API（OpenAI 互換）",
+   "ko": "로컬 API (OpenAI 호환)",
+   "es": "API local (compatible con OpenAI)",
+   "fr": "API locale (compatible OpenAI)",
+   "de": "Lokale API (OpenAI-kompatibel)",
+   "pt-BR": "API local (compatível com OpenAI)",
+   "ru": "Локальный API (совместимый с OpenAI)"
+  },
+  {
    "zh": "本机屏幕分辨率",
    "src": "qml/PcSourceDialog.qml",
    "zh-TW": "本機螢幕解析度",
@@ -27652,6 +27704,32 @@
    "de": "Diese Version enthält kein Xbox Streaming",
    "pt-BR": "Esta versão não inclui Xbox streaming",
    "ru": "Эта версия не включает Xbox потоковую передачу"
+  },
+  {
+   "zh": "此版本仅使用已安装的本地模型，不在线下载模型",
+   "src": "src/ui/LiveTranslation.cpp",
+   "zh-TW": "此版本僅使用已安裝的本機模型，不會在線上下載模型",
+   "en": "This build uses only installed local models and does not download them",
+   "ja": "このビルドはインストール済みのローカルモデルのみ使用し、モデルをダウンロードしません",
+   "ko": "이 빌드는 설치된 로컬 모델만 사용하며 모델을 다운로드하지 않습니다",
+   "es": "Esta versión solo usa modelos locales instalados y no descarga modelos",
+   "fr": "Cette version utilise uniquement les modèles locaux installés et ne les télécharge pas",
+   "de": "Diese Version nutzt nur installierte lokale Modelle und lädt keine Modelle herunter",
+   "pt-BR": "Esta versão usa apenas modelos locais instalados e não baixa modelos",
+   "ru": "Эта сборка использует только установленные локальные модели и не скачивает их"
+  },
+  {
+   "zh": "此版本仅使用已安装的本地翻译模型和运行库。",
+   "src": "qml/LiveTranslationDialog.qml",
+   "zh-TW": "此版本僅使用已安裝的本機翻譯模型與執行階段。",
+   "en": "This build uses only installed local translation models and runtimes.",
+   "ja": "このビルドはインストール済みのローカル翻訳モデルとランタイムのみ使用します。",
+   "ko": "이 빌드는 설치된 로컬 번역 모델과 런타임만 사용합니다.",
+   "es": "Esta versión solo usa los modelos de traducción y entornos de ejecución locales instalados.",
+   "fr": "Cette version utilise uniquement les modèles de traduction locaux et les environnements d’exécution installés.",
+   "de": "Diese Version nutzt nur installierte lokale Übersetzungsmodelle und Laufzeitbibliotheken.",
+   "pt-BR": "Esta versão usa apenas modelos de tradução locais e ambientes de execução instalados.",
+   "ru": "Эта сборка использует только установленные локальные модели перевода и среды выполнения."
   },
   {
    "zh": "此版本未包含 PS5 远程游玩组件。",
@@ -35298,6 +35376,19 @@
    "ru": "Сначала в паре с этим хозяином."
   },
   {
+   "zh": "请先安装本地翻译模型与运行库",
+   "src": "src/ui/LiveTranslation.cpp",
+   "zh-TW": "請先安裝本機翻譯模型與執行階段",
+   "en": "Install the local translation model and runtime first",
+   "ja": "先にローカル翻訳モデルとランタイムをインストールしてください",
+   "ko": "로컬 번역 모델과 런타임을 먼저 설치하세요",
+   "es": "Instala primero el modelo de traducción local y su entorno de ejecución",
+   "fr": "Installez d’abord le modèle de traduction local et son environnement d’exécution",
+   "de": "Installieren Sie zuerst das lokale Übersetzungsmodell und die Laufzeitbibliothek",
+   "pt-BR": "Instale primeiro o modelo de tradução local e o ambiente de execução",
+   "ru": "Сначала установите локальную модель перевода и среду выполнения"
+  },
+  {
    "zh": "请先完成配对，并填写有效主机地址。",
    "src": "src/ui/bridge/RemotePlay.cpp",
    "zh-TW": "請先完成配對，並填寫有效主機地址。",
@@ -35556,6 +35647,19 @@
    "de": "Enter eine gültige Hostadresse, Account ID und 8-stelliger Pairing-Code.",
    "pt-BR": "Enter um endereço de host válido, ID da conta e código de emparelhamento de 8 dígitos.",
    "ru": "Enter действительный адрес хоста, идентификатор учетной записи и 8-значный код сопряжения."
+  },
+  {
+   "zh": "请填写本机回环接口地址和模型名",
+   "src": "src/ui/LiveTranslation.cpp",
+   "zh-TW": "請輸入本機回送 API 位址與模型名稱",
+   "en": "Enter the loopback API address and model name",
+   "ja": "ループバック API のアドレスとモデル名を入力してください",
+   "ko": "루프백 API 주소와 모델 이름을 입력하세요",
+   "es": "Introduce la dirección de la API de bucle local y el nombre del modelo",
+   "fr": "Saisissez l’adresse de l’API sur la boucle locale et le nom du modèle",
+   "de": "Geben Sie die Loopback-API-Adresse und den Modellnamen ein",
+   "pt-BR": "Informe o endereço da API de loopback e o nome do modelo",
+   "ru": "Введите адрес API через loopback и имя модели"
   },
   {
    "zh": "请打开 Windows 实时字幕",
